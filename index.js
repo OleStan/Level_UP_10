@@ -49,29 +49,33 @@ input.addEventListener("keyup", function(event) {
 
 /*-----------------ERROR & CORECT-------------*/
 function errorD() {
-    userDate.style.border = "2px solid red";
+    document.getElementById("userDate").classList.remove("empty","wrong","corect");
+    document.getElementById("userDate").classList.add("wrong");
     document.getElementById("wrong_age").innerHTML= "You must be 13+";
     return false;
 }
 function corectD() {
-    userDate.style.border = "2px solid black";
-    document.getElementById("wrong_age").innerHTML= ""
-    return ;
+    document.getElementById("userDate").classList.remove("empty","wrong","corect");
+    document.getElementById("userDate").classList.add("corect");
+    return false;
 }
 function errorN() {
-
-   userName.style.border = "2px solid red";
+    document.getElementById("userName").classList.remove("empty","wrong","corect");
+    document.getElementById("userName").classList.add("wrong");
     return false;
 }
 function corectN() {
-    userName.style.border = "2px solid black";
+    document.getElementById("userName").classList.remove("empty","wrong","corect");
+    document.getElementById("userName").classList.add("corect");
     return false;
 }
 function errorP() {
-    userPassword.style.border = "2px solid red";
+    document.getElementById("userPassword").classList.remove("empty","wrong","corect");
+    document.getElementById("userPassword").classList.add("wrong");
     return false;
 }
 function corectP() {
-    userPassword.style.border = "2px solid black";
+    document.getElementById("userPassword").classList.remove("empty","wrong","corect");
+    document.getElementById("userPassword").classList.add("corect");
     return false;
 }
