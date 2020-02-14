@@ -1,0 +1,348 @@
+/*-----------input class------*/
+input {
+    margin-top: 4px;
+    display: flex;
+    width: 80%;
+    height: 28px;
+    color: white;
+    font-family: Calibri;
+    background: #232323;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+    outline: none;
+    justify-content: flex-start;
+    background: #595555;
+    box-shadow: inset 1px 3px 13px 5px rgba(0, 0, 0, 0.82);
+    padding-left: 10px;
+
+
+
+}
+input.empty {
+
+
+}
+input.corect {
+
+}
+input.wrong {
+ border: 2px solid red;
+}
+input#userDate {
+
+    width: 25px ;
+    width: 70px;
+    height: 28px;
+    text-align: center;
+    font-size: x-large;
+
+}
+/*----button-------*/
+.button {
+    padding: 3px 12px;
+    font-size: x-small;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #232323;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 3px #999;
+
+}
+.button:hover {background-color: #636363
+}
+.button:active {
+    background-color: #595859;
+    box-shadow: 0 3px #666;
+    transform: translateY(2px);
+}
+
+div.form_box {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    height: 400px;
+
+}
+/*---------------------TITLE------------*/
+.title{
+    height: 42px;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(35,35,35,1) 5%, rgba(35,35,35,1) 17%, rgba(150,24,0,1) 17%, rgba(150,24,0,1) 41%, rgba(169,29,2,1) 41%, rgba(169,29,2,1) 59%, rgba(169,29,2,1) 68%, rgba(169,29,2,1) 77%, rgba(181,31,2,1) 77%, rgba(181,31,2,1) 100%);
+    margin-bottom: 4px;
+    border-radius: 8px 8px 0 0px;
+    color: azure;
+    text-align: center;
+    font-family: Calibri, serif;
+
+
+}
+.title_in{
+    height: 42px;
+    border-radius: 8px 8px 0 0;
+    background: rgb(255,0,33);
+    background: linear-gradient(45deg, rgb(35, 35, 35) 19%,rgba(255,0,33,0) 20%);
+}
+p {
+    margin: 0;
+    padding-top: 3%;
+}
+
+/*------------------------------------*/
+
+input [type="checkbox"] {
+    width: 4px;
+    height: 4px;
+
+}
+
+.form_box2{
+     display: flex;
+     flex-direction: column;
+    height:210px;
+    background: #232323;
+    border-radius: 0 0 8px 8px;
+
+ }
+.form_box3{
+    width: 240px;
+    height:190px;
+    margin: 8px 12px 10px 10px;
+    background: #454545;
+    border-radius: 8px 8px 8px 8px;
+}
+form{
+
+}
+/*----------*/
+img.logo {
+    margin-top: 4px;
+    width: 28px;
+    height: 28px;
+}
+.Name, .Pass , .Date{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:8px 12px 10px 10px;
+    padding-left: 9px;
+}
+
+.Pass {
+
+}
+.Date {
+
+}
+.buttons {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.check{
+    display: flex;
+    flex-direction: row;
+    text-align: revert;
+}
+.bottom {
+    display: flex;
+    margin-top: 4px;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: x-small;
+
+}
+
+#wrong_age {
+    font-family: Calibri;
+    font-size: small;
+    color: red;
+
+}
+/*------------------------------CHECKBOX----------------------------------*/
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 15px;
+}
+
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+}
+
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+
+.container .checkmark:after {
+    left: 1px;
+    top: 2px;
+    width: 8px;
+    height: 5px;
+    border: solid white;
+    border-width: 0 5px 4px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/*----------*/
+html{
+    background: #a4a4a4;
+}
+a{
+    font-style: italic;
+    text-decoration: none;
+    color: #c4bec5;
+}
+
+
+@media screen {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------button------------------*/
+/*
+.button {
+    position: relative;
+    width:350px;
+    height: 40px;
+    margin-top: 20px;
+    color: rgba(42, 92, 152, 0.76);
+    background: linear-gradient(to top left, #ff7274, #98a1ff);
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 12px; box-shadow: 0 -3px rgba(207, 104, 104, 0.65) inset;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background: linear-gradient(to top left, #ff2b80, #48a9ff);
+}
+
+.button:active {
+    background: rgb(186, 87, 199);
+    box-shadow: 0 3px rgb(199, 70, 118) inset;
+}
+/*-----------------INPUT------------------*/
+/*
+input[type="text"] {
+    background-position: 0px;
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+input[type="password"] {
+    background-position: 0px;
+    background-image: url(lock1.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+
+.inputtext {
+    outline: none;
+    padding-left: 20px;
+    width: 450px;
+    height: 38px;
+    font-family: Calibri, serif;
+    font-size: large;
+    display: flex;
+    flex-grow: 2;
+    flex-shrink: 1;
+    margin-top: 6%;
+    color: #535b80;
+    background-color: #dffff8;
+    border: none;
+    border-radius: 3px;
+}
+
+input.inputtext:focus {
+    color: #000000;
+    border: 1px solid #000000
+}
+.checkbox_label:before {
+    content: "";
+    display: block;
+    width:10px;
+    height: 10px;
+    border: 1px solid black;
+}
+
+label {
+    color: #0c008a;
+    text-shadow: 1px 1px 2px #41aeeb, 0 0 1em #4b68ca;
+}
+
