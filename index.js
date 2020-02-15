@@ -57,6 +57,8 @@ function errorD() {
 function corectD() {
     document.getElementById("userDate").classList.remove("empty","wrong","corect");
     document.getElementById("userDate").classList.add("corect");
+    document.getElementById("wrong_age").innerHTML= " ";
+    console.log(document.getElementById("wrong_age"));
     return false;
 }
 function errorN() {
