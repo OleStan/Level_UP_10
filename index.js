@@ -1,20 +1,34 @@
 var elem = document.getElementById("button");
 var test = document.getElementById("testing");
 var input = document.getElementById("userName");
+let bad_pass = ["qwerty", "1234", "pass", "password","123456"];
 
 /*-----send click----------*/
 elem.addEventListener("click",function (event) {
+    event.preventDefault();
     var Name = document.getElementById("userName");
     var Pass = document.getElementById("userPassword");
     console.log(Pass);
     var Date = document.getElementById("userDate");
     console.log("clik clik");
+    const pass_control = document.getElementById("userPassword").value;
+    const check_pass = bad_pass.find(element => element === pass_control);
+/*---------pass------------------*/
+   if (check_pass == undefined) {
+       corectP();
+       }
+        else {
+            alert("Pasword: "+check_pass+"   is week! Pleas change it");
+            errorN();
+
+   }
+
 
     /*---------------VALIDATION----------------*/
 
     /*------Empty Input----*/
     if(!Name.value) errorN();
-    else  corectN();
+    else corectN();
 
     if(!Pass.value) errorP();
     /*------Pass lenght----*/
@@ -27,7 +41,7 @@ elem.addEventListener("click",function (event) {
     if(Date.value > 2007) errorD();
     else corectD();
 
-    event.preventDefault();
+
 });
 
 
@@ -52,18 +66,19 @@ function errorD() {
     document.getElementById("userDate").classList.remove("empty","wrong","corect");
     document.getElementById("userDate").classList.add("wrong");
     document.getElementById("wrong_age").innerHTML= "You must be 13+";
+    event.preventDefault();
     return false;
 }
 function corectD() {
     document.getElementById("userDate").classList.remove("empty","wrong","corect");
     document.getElementById("userDate").classList.add("corect");
-    document.getElementById("wrong_age").innerHTML= " ";
-    console.log(document.getElementById("wrong_age"));
+
     return false;
 }
 function errorN() {
     document.getElementById("userName").classList.remove("empty","wrong","corect");
     document.getElementById("userName").classList.add("wrong");
+    event.preventDefault();
     return false;
 }
 function corectN() {
@@ -74,6 +89,7 @@ function corectN() {
 function errorP() {
     document.getElementById("userPassword").classList.remove("empty","wrong","corect");
     document.getElementById("userPassword").classList.add("wrong");
+    event.preventDefault();
     return false;
 }
 function corectP() {
