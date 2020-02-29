@@ -6,7 +6,6 @@ input {
     height: 28px;
     color: white;
     font-family: Calibri;
-    background: #232323;
     border-radius: 3px;
     border: 1px solid #cccccc;
     outline: none;
@@ -32,8 +31,6 @@ input.wrong {
 
 }
 input#userDate {
-
-    width: 25px ;
     width: 70px;
     height: 28px;
     text-align: center;
@@ -74,7 +71,7 @@ div.form_box {
     height: 42px;
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(35,35,35,1) 5%, rgba(35,35,35,1) 17%, rgba(150,24,0,1) 17%, rgba(150,24,0,1) 41%, rgba(169,29,2,1) 41%, rgba(169,29,2,1) 59%, rgba(169,29,2,1) 68%, rgba(169,29,2,1) 77%, rgba(181,31,2,1) 77%, rgba(181,31,2,1) 100%);
     margin-bottom: 4px;
-    border-radius: 8px 8px 0 0px;
+    border-radius: 8px 8px ;
     color: azure;
     text-align: center;
     font-family: Calibri, serif;
@@ -84,7 +81,7 @@ div.form_box {
 .title_in{
     height: 42px;
     border-radius: 8px 8px 0 0;
-    background: rgb(255,0,33);
+
     background: linear-gradient(45deg, rgb(35, 35, 35) 19%,rgba(255,0,33,0) 20%);
 }
 p {
@@ -242,38 +239,3 @@ a{
     text-decoration: none;
     color: #c4bec5;
 }
-
-
-@media screen {
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,11 +1,28 @@
 var elem = document.getElementById("button");
-var test = document.getElementById("testing");
 var input = document.getElementById("userName");
 let bad_pass = ["qwerty", "1234", "pass", "password","123456"];
 
+
+
+
+function validateForm() {
+    const N = document.getElementById("userName").value;
+    const P = document.getElementById("userPassword").value;
+    const D = document.getElementById("userDate").value;
+    if (N == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+    console.log(N, P, D);
+    console.log("dsfdasfas");
+    return true;
+
+}
+
+
 /*-----send click----------*/
 elem.addEventListener("click",function (event) {
-    event.preventDefault();
+
     var Name = document.getElementById("userName");
     var Pass = document.getElementById("userPassword");
     console.log(Pass);
@@ -14,12 +31,13 @@ elem.addEventListener("click",function (event) {
     const pass_control = document.getElementById("userPassword").value;
     const check_pass = bad_pass.find(element => element === pass_control);
 /*---------pass------------------*/
-   if (check_pass == undefined) {
+   if (check_pass === undefined) {
        corectP();
        }
         else {
             alert("Pasword: "+check_pass+"   is week! Pleas change it");
             errorN();
+
 
    }
 
@@ -73,7 +91,7 @@ function corectD() {
     document.getElementById("userDate").classList.remove("empty","wrong","corect");
     document.getElementById("userDate").classList.add("corect");
 
-    return false;
+    return true;
 }
 function errorN() {
     document.getElementById("userName").classList.remove("empty","wrong","corect");
@@ -84,7 +102,7 @@ function errorN() {
 function corectN() {
     document.getElementById("userName").classList.remove("empty","wrong","corect");
     document.getElementById("userName").classList.add("corect");
-    return false;
+    return true;
 }
 function errorP() {
     document.getElementById("userPassword").classList.remove("empty","wrong","corect");
@@ -95,5 +113,5 @@ function errorP() {
 function corectP() {
     document.getElementById("userPassword").classList.remove("empty","wrong","corect");
     document.getElementById("userPassword").classList.add("corect");
-    return false;
+    return true;
 }

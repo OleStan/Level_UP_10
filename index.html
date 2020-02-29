@@ -18,23 +18,23 @@
   </div>
 
   <div class="form_box2">
-    <form action="" onsubmit="return validate();" >
+    <form action="" onsubmit="return validateForm()" name="myForm" method="get">
       <div class="form_box3">
         <div class="inputs"></div>
 
           <div class="Name">
             <img src="css/logo.png" class="logo">
-            <input type="text" id="userName" class="empty">
+            <input type="text" id="userName" class="empty" name="userName">
           </div>
 
           <div class="Pass">
             <img src="css/lock1.png" class="logo">
-            <input type="password" id="userPassword" class="empty">
+            <input type="password" id="userPassword" class="empty" name="userPassword">
           </div>
 
           <div class="Date">
             <img src="css/512x512.png" class="logo">
-            <input type="number" min="1850" max="2020" value="2008" id="userDate"class="empty">
+            <input type="number" min="1850" max="2020" value="2008" id="userDate"class="empty" name="number">
           <p id="wrong_age"> </p>
           </div>
 
@@ -44,7 +44,7 @@
               <span class="checkmark"></span>
             </label>
 
-            <button type="submit" id="button" class="button" >Отправить</button>
+            <button type="submit" id="button" class="button">Отправить</button>
           </div>
 
           <div class="bottom">
